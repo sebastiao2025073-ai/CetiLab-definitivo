@@ -1,0 +1,1 @@
+const c=window.CETI_CONFIG;document.getElementById('login').addEventListener('submit',e=>{e.preventDefault();const p=document.getElementById('password').value;if(p===c.SITE_PASSWORD){sessionStorage.setItem('ceti_unlocked','1');location.href='index.html'}else document.getElementById('error').classList.remove('hidden')});
